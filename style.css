@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(167, 143, 190,.2);
+}
+
+.head .frm{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.head .frm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+    margin-top: 150px;
+}
+
+.head .frm form label{
+    margin: 8px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.head .frm form input:checked + span{
+    background-color: rgba(0,0,0,.2);
+
+}
+
+
+.head .frm form label span{
+    padding: 5px 15px;
+    border-radius: 20px;
+    display:flex;
+}
+.head .frm form label span:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+
+
+.head .frm form input:checked + span::before{
+    content: "";
+    box-shadow: inset 0px 0px 0px 5px black;
+}
+
+.head .frm form label span::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    
+    background-color: white;
+    border: 1px solid black;
+    margin: 0px 10px;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    box-shadow:inset 0px 0px 0px 1px black;
+
+}
+
+.head .frm form label input{
+    display: none;
+}
